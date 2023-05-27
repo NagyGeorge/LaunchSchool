@@ -34,7 +34,11 @@ def apr_to_monthly(apr)
 end
 
 def valid_number?(num)
-  num.to_i.to_s == num
+  if num.to_i >= 0
+    num.to_i.to_s == num
+  else
+    false
+  end
 end
 
 def monthly_payment(total, interest, time)
