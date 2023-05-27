@@ -30,8 +30,7 @@ def float_validator?(input)
 end
 
 def apr_to_monthly(apr)
-  monthly = ((apr.to_f / 100) / 12)
-  monthly
+  ((apr.to_f / 100) / 12)
 end
 
 def valid_number?(num)
@@ -39,13 +38,11 @@ def valid_number?(num)
 end
 
 def monthly_payment(total, interest, time)
-  result = total.to_f * interest.to_f / (1 - (1 + interest.to_f)**(-time.to_f))
-  result
+  total.to_f * interest.to_f / (1 - (1 + interest.to_f)**(-time.to_f))
 end
 
 def add_years_months(year, month)
-  total_time = (year.to_i * 12) + month.to_i
-  total_time
+  (year.to_i * 12) + month.to_i
 end
 
 prompt('welcome')
