@@ -1,0 +1,4 @@
+# Ignore all SQLite databeses
+db/*.sqlite3
+key1.pub
+key2.pub

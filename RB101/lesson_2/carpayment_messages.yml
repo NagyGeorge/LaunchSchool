@@ -1,0 +1,23 @@
+en:
+    welcome: "Welcome to the car payment calculator"
+    loan_amount: "First we need the amount of your loan"
+    valid_loan: "Please enter a valid loan total"
+    apr: "Next we need your APR"
+    valid_apr: "Please enter a valid APR"
+    monthly__rate: "Your monthly rate is #{apr_to_monthly(rate).truncate(3) * 100}%"
+    loan_years: "Finally we need your loan duration in years"
+    loan_months: "and months"
+    valid_years_months: "Please enter a valid number of years and months"
+    your_total: "%{monthly_payment(loan_total, apr_to_monthly(rate), add_years_months(years, months)).round(2)} is your monthly payment"
+    start_over: "Would you like to calculate a new loan?"
+    
+es:
+    welcome: "Bienvenidos a la calculadora de prestamo"
+    loan_amount: "Primero necesita cuanto es la cantidad de su prestamo"
+    valid_loan: "Por favor entra un numero correcto"
+    apr: "Ahora necesita su Tasa Anual Efectiva"
+    valid_apr: "Por favor entra una TAE correcta"
+    loan_years: "Duracion del prestamo en anos"
+    loan_months: "y meses"
+    valid_years_months: "Por favor entra un numero de anos y meses correctos"
+    start_over: "Desea reempezar?"
