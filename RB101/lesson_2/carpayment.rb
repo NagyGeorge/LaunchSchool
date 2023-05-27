@@ -92,6 +92,7 @@ loop do
   puts "=> #{monthly_payment(loan_total, apr_to_monthly(rate),
                              add_years_months(years, months)).round(2)} is \
 your monthly payment"
+
   prompt('start_over')
 
   reply = ''
